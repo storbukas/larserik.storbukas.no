@@ -3,112 +3,51 @@ layout: default
 title: Lars Erik Storbukås
 ---
 
-<!--Wrapper-->
+<!-- Wrapper -->
 <div id="wrapper" class="margLTop  margLBottom">
 
-  <!--Container-->
+  <!-- Container -->
   <div class="container">
 
     <div class="row ">
 
-      <!--Letf content-->
+      <!-- Left content -->
       <div class="col-md-3 nopr left-content">
-
-        <!--Header-->
-        <header id="header">
-
-          <!--Main header-->
-          <div class="main-header">
-            <!--Profile image-->
-            <figure class="img-profile">
-              <img src="img/profile.jpg" alt="" />
-
-              <figcaption class="name-profile">
-                <span>Lars Erik Storbukås <sup>&reg;</sup></span>
-              </figcaption>
-
-            </figure>
-            <!--End profile image-->
-
-            <!--Main navigation-->
-            <nav id="main-nav" class="main-nav">
-
-              <ul>
-                <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
-              </ul>
-
-            </nav>
-            <!--End main navigation-->
-
-          </div>
-          <!--End main header-->
-
-          <div class="search-header">
-            <form class="search-form" action="#">
-              <input type="text" value="Search" onblur="if(this.value == '') { this.value = 'Search'; }" onfocus="if(this.value == 'Search') { this.value = ''; }">
-              <input type="submit" value="">
-              <i class="icon-search"></i>
-            </form>
-          </div>
-
-          <div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
-            <ul class="social">
-              <li><a href="#"><i class="icon-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-linkedin"></i></a></li>
-            </ul>
-
-            <p>&copy; 2015 Mutationthemes.</p>
-
-          </div>
-
-        </header>
-        <!--End  header-->
-
+        {% include blog_header.html %}
       </div>
-      <!--End left content-->
 
-      <!--Right content-->
+      <!-- Right content -->
       <div class="col-md-9 right-content">
 
-        <!--Portfolio Tab-->
+        <!-- Portfolio Tab -->
         <section id="blog" class="bgWhite ofsInBottom">
 
-          <!--Portfolio -->
+          <!-- Portfolio -->
           <div class="blog">
 
-            <!--Main title-->
-
+            <!-- Main title -->
             <div class="main-title">
               <h1>The blog</h1>
-              <div class="divider">
-                <div class="zigzag large clearfix " data-svg-drawing="yes">
-                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-					</svg>
-                </div>
-              </div>
+
+              {% include zigzag_divider.html %}
             </div>
 
-            <!--End main title-->
-
-            <!--Content-->
+            <!-- Content -->
             <div class="content">
 
-              <!--Block content-->
+              <!-- Block content -->
               <div class="block-content ">
 
-                <!--Works-->
+                <!-- Works -->
                 <div class="blog">
 
-                  <!--Row-->
+                  <!-- Row -->
                   <div class="row">
 
-                    <!--Blog posts-->
+                    <!-- Blog posts -->
                     <div class="block-posts ">
 
-                      <!--Block post-->
+                      <!-- Block post -->
                       <div class="block-post clearfix">
                         <div class="col-md-12">
 
@@ -126,24 +65,18 @@ title: Lars Erik Storbukås
                           <ul class="post-meta">
                             <li>
                               <i class="icon-user"></i>
-                              <span>Post by
-			                                            <a href="#">Benaissa Ghrib</a>
-			                                        </span>
+                              <span>Post by <a href="#">Benaissa Ghrib</a></span>
                             </li>
+
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in
-			                                            <a href="#">Web Design</a>
-			                                        </span>
+                              <span>Tagged in <a href="#">Web Design</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments
-				                                            <a href="#">(2)</a>
-				                                        </span>
+                              <span>Comments <a href="#">(2)</a></span>
                             </li>
-
                           </ul>
 
                           <hr>
@@ -157,23 +90,10 @@ title: Lars Erik Storbukås
 
                         <div class="clearfix"></div>
 
-                        <!--Divider-->
-                        <div class="divider-m tCenter margTSmall margBottom clearfix">
-                          <div class="col-md-12">
-                            <div class="zigzag medium clearfix " data-svg-drawing="yes">
-                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-		<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-			29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-		</svg>
-                            </div>
-                          </div>
-                        </div>
-                        <!--End divider-->
+                        {% include mini_zigzag_divider.html %}
 
                       </div>
-                      <!--End block post-->
-
-                      <!--Block post-->
+                      <!-- Block post -->
                       <div class="block-post ">
                         <div class="col-md-12">
 
@@ -195,24 +115,18 @@ title: Lars Erik Storbukås
                           <ul class="post-meta">
                             <li>
                               <i class="icon-user"></i>
-                              <span>Post by
-		                                            <a href="#">Benaissa Ghrib</a>
-		                                        </span>
+                              <span>Post by <a href="#">Benaissa Ghrib</a></span>
                             </li>
+
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in
-		                                            <a href="#">Web Design</a>
-		                                        </span>
+                              <span>Tagged in <a href="#">Web Design</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments
-			                                            <a href="#">(2)</a>
-			                                        </span>
+                              <span>Comments <a href="#">(2)</a></span>
                             </li>
-
                           </ul>
 
                           <hr>
@@ -226,23 +140,11 @@ title: Lars Erik Storbukås
 
                         <div class="clearfix"></div>
 
-                        <!--Divider-->
-                        <div class="divider-m tCenter margTSmall margBottom clearfix">
-                          <div class="col-md-12">
-                            <div class="zigzag medium clearfix " data-svg-drawing="yes">
-                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-                            </div>
-                          </div>
-                        </div>
-                        <!--End divider-->
+                        {% include mini_zigzag_divider.html %}
 
                       </div>
-                      <!--End block post-->
 
-                      <!--Block post-->
+                      <!-- Block post -->
                       <div class="block-post ">
                         <div class="col-md-12">
 
@@ -256,24 +158,18 @@ title: Lars Erik Storbukås
                           <ul class="post-meta">
                             <li>
                               <i class="icon-user"></i>
-                              <span>Post by
-		                                            <a href="#">Benaissa Ghrib</a>
-		                                        </span>
+                              <span>Post by <a href="#">Benaissa Ghrib</a></span>
                             </li>
+
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in
-		                                            <a href="#">Web Design</a>
-		                                        </span>
+                              <span>Tagged in <a href="#">Web Design</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments
-			                                            <a href="#">(2)</a>
-			                                        </span>
+                              <span>Comments <a href="#">(2)</a></span>
                             </li>
-
                           </ul>
 
                           <hr>
@@ -287,23 +183,11 @@ title: Lars Erik Storbukås
 
                         <div class="clearfix"></div>
 
-                        <!--Divider-->
-                        <div class="divider-m tCenter margTSmall margBottom clearfix">
-                          <div class="col-md-12">
-                            <div class="zigzag medium clearfix " data-svg-drawing="yes">
-                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-	</svg>
-                            </div>
-                          </div>
-                        </div>
-                        <!--End divider-->
+                        {% include mini_zigzag_divider.html %}
 
                       </div>
-                      <!--End block post-->
 
-                      <!--Block post-->
+                      <!-- Block post -->
                       <div class="block-post ">
                         <div class="col-md-12">
 
@@ -322,24 +206,17 @@ title: Lars Erik Storbukås
                           <ul class="post-meta">
                             <li>
                               <i class="icon-user"></i>
-                              <span>Post by
-                                            <a href="#">Benaissa Ghrib</a>
-                                        </span>
+                              <span>Post by <a href="#">Benaissa Ghrib</a></span>
                             </li>
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in
-                                            <a href="#">Web Design</a>
-                                        </span>
+                              <span>Tagged in <a href="#">Web Design</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments
-	                                            <a href="#">(2)</a>
-	                                        </span>
+                              <span>Comments <a href="#">(2)</a></span>
                             </li>
-
                           </ul>
 
                           <hr>
@@ -353,23 +230,11 @@ title: Lars Erik Storbukås
 
                         <div class="clearfix"></div>
 
-                        <!--Divider-->
-                        <div class="divider-m tCenter margTSmall margBottom clearfix">
-                          <div class="col-md-12">
-                            <div class="zigzag medium clearfix " data-svg-drawing="yes">
-                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-</svg>
-                            </div>
-                          </div>
-                        </div>
-                        <!--End divider-->
+                        {% include mini_zigzag_divider.html %}
 
                       </div>
-                      <!--End block post-->
 
-                      <!--Block post-->
+                      <!-- Block post -->
                       <div class="block-post ">
                         <div class="col-md-12">
 
@@ -387,24 +252,17 @@ title: Lars Erik Storbukås
                           <ul class="post-meta">
                             <li>
                               <i class="icon-user"></i>
-                              <span>Post by
-	                                            <a href="#">Benaissa Ghrib</a>
-	                                        </span>
+                              <span>Post by <a href="#">Benaissa Ghrib</a></span>
                             </li>
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in
-	                                            <a href="#">Web Design</a>
-	                                        </span>
+                              <span>Tagged in <a href="#">Web Design</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments
-		                                            <a href="#">(2)</a>
-		                                        </span>
+                              <span>Comments <a href="#">(2)</a></span>
                             </li>
-
                           </ul>
 
                           <hr>
@@ -418,23 +276,11 @@ title: Lars Erik Storbukås
 
                         <div class="clearfix"></div>
 
-                        <!--Divider-->
-                        <div class="divider-m tCenter margTSmall margBottom clearfix">
-                          <div class="col-md-12">
-                            <div class="zigzag medium clearfix " data-svg-drawing="yes">
-                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-</svg>
-                            </div>
-                          </div>
-                        </div>
-                        <!--End divider-->
+                        {% include mini_zigzag_divider.html %}
 
                       </div>
-                      <!--End block post-->
 
-                      <!--Block post-->
+                      <!-- Block post -->
                       <div class="block-post ">
                         <div class="col-md-12">
 
@@ -448,24 +294,18 @@ title: Lars Erik Storbukås
                           <ul class="post-meta">
                             <li>
                               <i class="icon-user"></i>
-                              <span>Post by
-					                                            <a href="#">Benaissa Ghrib</a>
-					                                        </span>
+                              <span>Post by <a href="#">Benaissa Ghrib</a></span>
                             </li>
+
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in
-					                                            <a href="#">Web Design</a>
-					                                        </span>
+                              <span>Tagged in <a href="#">Web Design</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments
-						                                            <a href="#">(2)</a>
-						                                        </span>
+                              <span>Comments <a href="#">(2)</a></span>
                             </li>
-
                           </ul>
 
                           <hr>
@@ -475,37 +315,21 @@ title: Lars Erik Storbukås
                             <div class="block-icon"><i class="icon-quote"></i></div>
                             <h3 class="block-profile">Lars Erik Storbukås<span> CEO Inc</span></h3>
                             <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</blockquote>
-
                           </div>
 
                         </div>
 
                         <div class="clearfix"></div>
 
-                        <!--Divider-->
-                        <div class="divider-m tCenter margTSmall margBottom clearfix">
-                          <div class="col-md-12">
-                            <div class="zigzag medium clearfix " data-svg-drawing="yes">
-                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-				<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-					29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-				</svg>
-                            </div>
-                          </div>
-                        </div>
-                        <!--End divider-->
+                        {% include mini_zigzag_divider.html %}
 
                       </div>
-                      <!--End block post-->
 
                     </div>
-                    <!--End blog posts-->
 
                   </div>
-                  <!--End row-->
 
                   <div class="block pagination tCenter margTSmall margBSmall">
-
                     <ul>
                       <li class="prev"><a href="#"><i class="icon-left-open-mini"></i></a></li>
                       <li><a href="#">1</a></li>
@@ -514,59 +338,32 @@ title: Lars Erik Storbukås
                       <li><a href="#">4</a></li>
                       <li class="next"><a href="#"><i class="icon-right-open-mini"></i></a></li>
                     </ul>
-
                   </div>
 
                 </div>
-                <!--End blog-->
 
               </div>
-              <!--End block content-->
 
             </div>
-            <!--End content-->
 
-            <!--Button-->
+            <!-- Button -->
             <div class="button ofsInTop tCenter">
 
-              <div class="divider">
-                <div class="zigzag large clearfix " data-svg-drawing="yes">
-                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-				<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-					29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-				</svg>
-                </div>
-              </div>
+              {% include zigzag_divider.html %}
 
-              <!--Row-->
+              <!-- Row -->
               <div class="row ">
-
                 <div class="col-md-12">
                   <a class="but opc-1 ico" href="#">Download my cv</a>
                   <a class="but opc-2 ico" href="#">Print my resume</a>
-
                 </div>
-
               </div>
-              <!--End row-->
 
             </div>
-            <!--End button-->
 
           </div>
-          <!--End blog-->
-
         </section>
-        <!--End blog tab-->
-
       </div>
-      <!--End right content-->
-
     </div>
-    <!--End  row-->
-
   </div>
-  <!--End  container-->
-
 </div>
-<!--End wrapper-->

@@ -1,0 +1,45 @@
+<!--Header-->
+<header id="header">
+
+  <!--Main header-->
+  <div class="main-header">
+
+    <!--Profile image-->
+    <figure class="img-profile">
+      <img src="img/profile.jpg" alt="" />
+    </figure>
+
+    <!--Main navigation-->
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="search-header">
+    <form class="search-form" action="#">
+      <input type="text" value="Search" onblur="if(this.value == '') { this.value = 'Search'; }" onfocus="if(this.value == 'Search') { this.value = ''; }">
+      <input type="submit" value="">
+      <i class="icon-search"></i>
+    </form>
+  </div>
+
+  <div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
+
+    <ul class="social">
+      <li><a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank"><i class="icon-facebook"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="icon-linkedin"></i></a></li>
+      <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="icon-github"></i></a></li>
+    </ul>
+
+    <br />
+
+    <span class="main-title">
+      <h1>{{ site.name }}</h1>
+    </span>
+
+  </div>
+
+</header>
