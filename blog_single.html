@@ -14,7 +14,7 @@ title: Lars Erik Storbukås
       <!-- Left content -->
       <div class="col-md-3 nopr left-content">
 
-        {% include blog_single_header.html %}
+        {% include blog_post_header.html %}
 
       </div>
 
@@ -30,7 +30,7 @@ title: Lars Erik Storbukås
             <!-- Main title -->
 
             <div class="main-title">
-              <h1>The Blog</h1>
+              <h1>Blog Post</h1>
 
               {% include zigzag_divider.html %}
             </div>
@@ -66,22 +66,16 @@ title: Lars Erik Storbukås
                           <ul class="post-meta">
                             <li>
                               <i class="icon-user"></i>
-                              <span>Post by
-			                                            <a href="#">Benaissa Ghrib</a>
-			                                        </span>
+                              <span>Post by <a href="#">Benaissa Ghrib</a></span>
                             </li>
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in
-			                                            <a href="#">Web Design</a>
-			                                        </span>
+                              <span>Tagged in <a href="#">Web Design</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments
-				                                            <a href="#">(2)</a>
-				                                        </span>
+                              <span>Comments <a href="#">(<span class="fb-comments-count" data-href="http://larserik.storbukas.no"></span>)</a></span>
                             </li>
 
                           </ul>
@@ -113,7 +107,7 @@ title: Lars Erik Storbukås
             <!-- Main title -->
 
             <div class="main-title">
-              <h1>Comments <span class="cm-count">(2)</span></h1>
+              <h1>Comments <span class="cm-count">(<span class="fb-comments-count" data-href="http://larserik.storbukas.no"></span>)</span></h1>
 
               {% include zigzag_divider.html %}
             </div>
@@ -132,133 +126,7 @@ title: Lars Erik Storbukås
 
                     <div class="col-md-12">
 
-                      <!-- Comments and replys -->
-
-                      <ul class="comments clearfix">
-                        <li>
-                          <div class="comment">
-
-                            <div class="author-img">
-                              <img src="img/comment/1.jpg" alt="">
-                              <div class="reply-btn">
-                                <a class="link" href="#replyForm">
-												Reply</a></div>
-
-                            </div>
-                            <div class="comment-content">
-                              <div class="comments-info">
-                                <div class="author"><a href="#">Benaissa Ghrib</a></div>
-                                <div class="date"><a href="#">July 19, 2013 at 12 am</a></div>
-                              </div>
-                              <p class="expert">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tempor vehicula porta. Phasellus magna arcu, commodo non porta vulputate, mattis eget lacus. Nulla eget leo ipsum.</p>
-                            </div>
-
-                          </div>
-
-                        </li>
-
-                        <li class="replys children">
-                          <div class="comment children">
-                            <div class="author-img">
-                              <img src="img/comment/2.jpg" alt="">
-
-                              <div class="reply-btn">
-                                <a class="link" href="#replyForm">
-														Reply</a></div>
-
-                            </div>
-
-                            <div class="comment-content">
-                              <div class="comments-info">
-                                <div class="author"><a href="#">Benaissa Ghrib</a></div>
-                                <div class="date"><a href="#">July 19, 2013 at 12 am</a></div>
-                              </div>
-                              <p class="expert">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tempor vehicula porta. Phasellus magna arcu, commodo non porta vulputate, mattis eget lacus. Nulla eget leo ipsum.</p>
-                            </div>
-
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="comment">
-
-                            <div class="author-img">
-                              <img alt="" src="img/comment/3.jpg">
-
-                              <div class="reply-btn">
-                                <a class="link" href="#replyForm">
-											Reply</a></div>
-
-                            </div>
-                            <div class="comment-content">
-                              <div class="comments-info">
-                                <div class="author"><a href="#">Benaissa Ghrib</a></div>
-                                <div class="date"><a href="#">July 19, 2013 at 12 am</a></div>
-                              </div>
-                              <p class="expert">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tempor vehicula porta. Phasellus magna arcu, commodo non porta vulputate, mattis eget lacus. Nulla eget leo ipsum.</p>
-                            </div>
-
-                          </div>
-                        </li>
-
-                      </ul>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- Main title -->
-
-            <div class="main-title">
-              <h1>Leave a comment</h1>
-
-              {% include zigzag_divider.html %}
-            </div>
-
-            <!-- Content -->
-            <div class="content">
-
-              <!-- Block content -->
-              <div class="block-content margBMedium">
-
-                <!-- Reply -->
-                <div class="block-reply">
-
-                  <!-- Row -->
-                  <div class="row">
-
-                    <div class="col-md-12">
-
-                      <form class="reply-form" action="#">
-
-                        <!-- Input columns -->
-                        <div class="input-columns clearfix">
-
-                          <div class="column1">
-                            <div class="column-inner">
-                              <input type="text" placeholder="Name" value="" id="name" name="name">
-                            </div>
-                          </div>
-
-                          <!-- Column -->
-                          <div class="column2">
-                            <div class="column-inner">
-                              <input type="text" placeholder="Email" value="" id="email" name="email">
-                            </div>
-                          </div>
-
-                        </div>
-
-                        <input type="text" placeholder="WebSite" value="" id="website" name="website">
-                        <textarea name="message" placeholder="Message" id="message" cols="45" rows="10"></textarea>
-                        <input type="submit" value="Post a comment" class="but opc-2 submit">
-                      </form>
+                      <div id="fb-comments" class="fb-comments" width="100%" data-href="http://larserik.storbukas.no" data-numposts="5"></div>
 
                     </div>
 
