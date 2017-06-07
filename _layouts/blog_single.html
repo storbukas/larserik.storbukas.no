@@ -13,27 +13,30 @@ title: Lars Erik Storbukås
 
       <!-- Left content -->
       <div class="col-md-3 nopr left-content">
-        {% include detail_page_header.html %}
+
+        {% include blog_post_header.html %}
+
       </div>
 
       <!-- Right content -->
       <div class="col-md-9 right-content">
 
-        <!-- Portfolio Tab -->
+        <!-- Blog Tab -->
         <section id="blog" class="bgWhite ofsInBottom">
 
-          <!-- Portfolio -->
+          <!-- Blog -->
           <div class="blog">
 
             <!-- Main title -->
+
             <div class="main-title">
-              <h1>The blog</h1>
+              <h1>Blog Post</h1>
 
               {% include zigzag_divider.html %}
             </div>
 
             <!-- Content -->
-            <div class="content">
+            <div class="content single">
 
               <!-- Block content -->
               <div class="block-content ">
@@ -45,12 +48,10 @@ title: Lars Erik Storbukås
                   <div class="row">
 
                     <!-- Blog posts -->
-                    <div class="block-posts ">
-
-                      {% for post in site.posts %}
+                    <div class="block-posts clearfix">
 
                       <!-- Block post -->
-                      <div class="block-post clearfix">
+                      <div class="block-post single clearfix">
                         <div class="col-md-12">
 
                           <div class="post-media margBSmall">
@@ -58,58 +59,71 @@ title: Lars Erik Storbukås
                           </div>
 
                           <div class="post-title">
-                            <a href="{{ post.url }}">
-                              <h1>{{ post.title }}</h1>
-                            </a>
-                            <span class="meta-date">{{ post.date | date_to_string }}</span>
+                            <h1>{{ page.title }}</h1>
+                            <span class="meta-date">{{ page.date | date_to_string }}</span>
                           </div>
 
                           <ul class="post-meta">
                             <li>
                               <i class="icon-user"></i>
-                              <span>Post by <a href="#">{{ post.author }}</a></span>
+                              <span>Post by <a href="#">{{ page.author }}</a></span>
                             </li>
-
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in <a href="#">{{ post.tag }}</a></span>
+                              <span>Tagged in <a href="#">{{ page.tag }}</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments <a href="#">(2)</a></span>
+                              <span>Comments <a href="#">(<span class="fb-comments-count" data-href="http://larserik.storbukas.no"></span>)</a></span>
                             </li>
+
                           </ul>
 
                           <hr>
 
-                          {{ post.excerpt | markdownify }}
-
-                          <a href="blog_single.html" class="but brd">Read More</a>
+                          {{ content | markdownify }}
 
                         </div>
 
-                        <div class="clearfix"></div>
-
-                        {% include mini_zigzag_divider.html %}
-
                       </div>
-
-                      {% endfor %}
 
                     </div>
 
                   </div>
 
-                  <div class="block pagination tCenter margTSmall margBSmall">
-                    <ul>
-                      <li class="prev"><a href="#"><i class="icon-left-open-mini"></i></a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a class="selected" href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li class="next"><a href="#"><i class="icon-right-open-mini"></i></a></li>
-                    </ul>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Main title -->
+
+            <div class="main-title">
+              <h1>Comments <span class="cm-count">(<span class="fb-comments-count" data-href="http://larserik.storbukas.no"></span>)</span></h1>
+
+              {% include zigzag_divider.html %}
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+
+              <!-- Block content -->
+              <div class="block-content ">
+
+                <!-- Comment -->
+                <div class="block-comment">
+
+                  <!-- Row -->
+                  <div class="row">
+
+                    <div class="col-md-12">
+
+                      <div id="fb-comments" class="fb-comments" width="100%" data-href="http://larserik.storbukas.no" data-numposts="5"></div>
+
+                    </div>
+
                   </div>
 
                 </div>
