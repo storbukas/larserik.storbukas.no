@@ -27,7 +27,7 @@ title: Lars Erik Storbukås
 
             <!-- Main title -->
             <div class="main-title work-title">
-              <h1>Amazing Branding</h1>
+              <h1>Lars Erik Storbukås</h1>
 
               {% include zigzag_divider.html %}
             </div>
@@ -49,23 +49,22 @@ title: Lars Erik Storbukås
                 <div class="block-single margBottom clearfix">
                   <div class="col-md-10 col-md-offset-1">
                     <h1 class="large-title margBSSmall">Project
-												 <br>Case Study</h1>
-                    <p class="margBSSmall">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.Sed ut perspiciatis unde omnis iste natus
-                      error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p>
+												 <br>{{ page.title }}</h1>
+                    {{ content | markdownify }}
 
                     <hr>
 
                     <ul>
                       <li>Job :
-                        <strong>Branding &amp; Development</strong>
+                        <strong>Branding &amp; {{ page.job }}</strong>
                       </li>
 
                       <li>Client :
-                        <strong>Lars Erik Storbukås</strong>
+                        <strong>{{ page.client }}</strong>
                       </li>
 
-                      <li>Year :
-                        <strong>Mars , 2015</strong>
+                      <li>Date :
+                        <strong>{{ page.date | date_to_string }}</strong>
                       </li>
 
                       <li>Agency :
@@ -103,9 +102,9 @@ title: Lars Erik Storbukås
                 <div class="block-single margBottom clearfix">
                   <div class="col-md-10 col-md-offset-1">
                     <ul class="social tCenter">
-                      <li><a href="#"><i class="icon-facebook"></i></a></li>
-                      <li><a href="#"><i class="icon-twitter"></i></a></li>
-                      <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                      <li><a href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon-facebook"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon-linkedin"></i></a></li>
+                      <li><a href="https://github.com/{{ site.github_username }}"><i class="icon-github"></i></a></li>
                     </ul>
                   </div>
                 </div>

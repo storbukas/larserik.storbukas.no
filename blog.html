@@ -72,12 +72,12 @@ title: Lars Erik Storbukås
 
                             <li>
                               <i class="icon-layout"></i>
-                              <span>Tagged in <a href="#">{{ post.tag }}</a></span>
+                              <span>Tagged in <a href="#">{{ post.tag }}</a></span>
                             </li>
 
                             <li>
                               <i class="icon-comment"></i>
-                              <span>Comments <a href="#">(2)</a></span>
+                              <span>Comments <a href="#">(<span class="fb-comments-count" data-href="http://larserik.storbukas.no"></span>)</a></span>
                             </li>
                           </ul>
 
@@ -85,7 +85,7 @@ title: Lars Erik Storbukås
 
                           {{ post.excerpt | markdownify }}
 
-                          <a href="blog_single.html" class="but brd">Read More</a>
+                          <a href="{{ post.url }}" class="but brd">Read More</a>
 
                         </div>
 
@@ -118,20 +118,7 @@ title: Lars Erik Storbukås
 
             </div>
 
-            <!-- Button -->
-            <div class="button ofsInTop tCenter">
-
-              {% include zigzag_divider.html %}
-
-              <!-- Row -->
-              <div class="row ">
-                <div class="col-md-12">
-                  <a class="but opc-1 ico" href="#">Download my cv</a>
-                  <a class="but opc-2 ico" href="#">Print my resume</a>
-                </div>
-              </div>
-
-            </div>
+            {% include print_cv.html %}
 
           </div>
         </section>

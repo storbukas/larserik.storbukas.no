@@ -3,77 +3,62 @@ section_id: contact
 section_title: map location
 ---
 
-<!--Content-->
+<!-- Content -->
 <div class="content">
 
-  <!--Block content-->
+  <!-- Block content -->
   <div class="block-content ">
 
-    <!--Map-->
+    <!-- Map -->
     <div class="block-map">
 
-      <!--Row-->
+      <!-- Row -->
       <div class="row">
 
         <div class="col-md-12">
-
           <div id="map"></div>
-
         </div>
 
       </div>
-      <!--End row-->
 
     </div>
-    <!--End map-->
 
   </div>
-  <!--End block content-->
 
 </div>
-<!--End content-->
 
-<!--Main title-->
+<!-- Main title -->
 
 <div class="main-title">
   <h1>contact info</h1>
-  <div class="divider">
-    <div class="zigzag large clearfix " data-svg-drawing="yes">
-      <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
-						<path d="M1.357,12.26 10.807,2.81 20.328,12.332
-							29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
-						</svg>
-    </div>
-  </div>
+
+  {% include zigzag_divider.html %}
 </div>
 
-<!--End main title-->
-
-<!--Content-->
+<!-- Content -->
 <div class="content">
 
-  <!--Block content-->
+  <!-- Block content -->
   <div class="block-content ">
 
-    <!--Info-->
+    <!-- Info -->
     <div class="block-info">
 
-      <!--Row-->
+      <!-- Row -->
       <div class="row">
 
         <div class="col-md-12">
 
           <div class="info-holder   margTMedium">
 
-            <!--Address info-->
+            <!-- Address info -->
             <div class="address-info">
               <i class="icon-location"></i>
               <p>Lars Erik Storbukås<br />Gunhilds vei 11<br>4633 Kristiansand
               </p>
             </div>
-            <!--End address info-->
 
-            <!--Contact info-->
+            <!-- Contact info -->
             <div class="contact-info tCenter">
               <ul>
                 <li>
@@ -82,20 +67,76 @@ section_title: map location
                 </li>
               </ul>
             </div>
-            <!--End contact info-->
 
           </div>
 
         </div>
 
       </div>
-      <!--End row-->
 
     </div>
-    <!--End info-->
+  </div>
+</div>
+
+<!-- Main title -->
+
+<div class="main-title">
+  <h1>send me an email</h1>
+  
+  {% include zigzag_divider.html %}
+</div>
+
+<!-- Content -->
+<div class="content">
+
+  <!-- Block content -->
+  <div class="block-content ">
+
+    <!-- Contact -->
+    <div class="block-contact margBSSmall">
+
+      <!-- Row -->
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <form class="contact-form" method="post" action="send.php">
+
+            <!-- Input columns -->
+            <div class="input-columns clearfix">
+
+              <div class="column1">
+                <div class="column-inner">
+                  <input type="text" placeholder="Name" value="" id="name" name="name">
+                </div>
+              </div>
+
+              <!-- Column -->
+              <div class="column2">
+                <div class="column-inner">
+                  <input type="text" placeholder="Email" value="" id="email" name="email">
+                </div>
+              </div>
+            </div>
+
+            <input type="text" placeholder="Subject" value="" id="subject" name="subject">
+            <textarea name="message" placeholder="Message" id="message" cols="45" rows="10"></textarea>
+            <input type="submit" value="send your email" class="but opc-2 submit">
+          </form>
+
+          <!-- Contact form message -->
+          <div id="success">
+            <h2>Your message has been sent. Thank you!</h2></div>
+          <div id="error">
+            <h2>Sorry your message can not be sent.</h2></div>
+
+        </div>
+
+      </div>
+    </div>
 
   </div>
-  <!--End block content-->
 
 </div>
-<!--End content-->
+
+{% include print_cv.html %}
