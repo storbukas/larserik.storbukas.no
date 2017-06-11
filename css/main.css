@@ -1,4 +1,13 @@
 /*Preloader*/
+@media print {
+  @page {
+    size: 210mm 297mm;
+    margin: 14mm;
+  }
+  .container {
+    width: 1170px;
+  }
+}
 
 #loader {
   background: #efefef;
