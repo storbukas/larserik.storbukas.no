@@ -54,7 +54,9 @@ section_title: map location
             <!-- Address info -->
             <div class="address-info">
               <i class="icon-location"></i>
-              <p>Lars Erik Storbukås<br />Gunhilds vei 11<br>4633 Kristiansand
+              <p>{{ site.data.user_info.first_name }} {{ site.data.user_info.last_name}}<br />
+                 {{ site.data.user_info.home_address }}<br>
+                 {{ site.data.user_info.home_zip_code }} {{ site.data.user_info.home_city }}
               </p>
             </div>
 
@@ -64,7 +66,7 @@ section_title: map location
                 <li>
                   <a href="tel:+4795087795">
                     <div class="ico"><i class="icon-phone"></i></div>
-                    <p>Tel: +47 950 87 795</p>
+                    <p>Tel: {{ site.data.user_info.phone_country_code}} {{ site.data.user_info.phone_number }}</p>
                   </a>
                 </li>
               </ul>
