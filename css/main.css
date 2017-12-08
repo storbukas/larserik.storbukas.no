@@ -569,7 +569,6 @@
 	line-height:45px;
 }
 
-
 .timeline.experience:after{
 	content: '\e8ba';
 }
@@ -578,6 +577,9 @@
 	content: '\e80c';
 }
 
+.timeline.projects:after{
+  content: '\e831';
+}
 
 .exp{
 	padding-left: 50px;
@@ -585,7 +587,6 @@
 	position:relative;
 	margin-bottom:10px;
 }
-
 
 .exp:after{
  	background: #0487cc;
