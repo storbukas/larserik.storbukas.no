@@ -1,2 +1,2 @@
 # larserik.storbukas.no
-Lars Erik Storbukås website
+Personal website of Lars Erik Storbukås <larserik@storbukas>
